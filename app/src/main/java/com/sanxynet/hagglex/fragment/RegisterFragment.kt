@@ -99,7 +99,7 @@ class RegisterFragment : Fragment() {
 
                 response.data?.register?.let {
                     activity?.runOnUiThread {
-                        val action = RegisterFragmentDirections.actionCreateAccountPageToVerificationPage(
+                        val action = RegisterFragmentDirections.actionRegisterToVerification(
                             response.data!!.register!!.user.email, response.data!!.register!!.token)
                         viewModel.updateUserName(response.data!!.register!!.user.username)
                         userToken = response.data!!.register!!.token
