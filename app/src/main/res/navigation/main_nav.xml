@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/logIn">
+
+    <fragment
+        android:id="@+id/logIn"
+        android:name="com.sanxynet.hagglex.fragment.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_login_to_dashBoard"
+            app:destination="@id/dashBoard" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.sanxynet.hagglex.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_verification"
+            app:destination="@id/verification" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashBoard"
+        android:name="com.sanxynet.hagglex.fragment.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" />
+    <fragment
+        android:id="@+id/verification"
+        android:name="com.sanxynet.hagglex.fragment.VerificationFragment"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" >
+        <action
+            android:id="@+id/action_verification_to_setUpComplete"
+            app:destination="@id/setUpComplete" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="sanxy@gmail.com" />
+        <argument
+            android:name="token"
+            app:argType="string"
+            android:defaultValue="abc" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUpComplete"
+        android:name="com.sanxynet.hagglex.fragment.SetUpCompleteFragment"
+        android:label="fragment_set_up_complete"
+        tools:layout="@layout/fragment_set_up_complete" >
+        <action
+            android:id="@+id/action_setUpComplete_to_dashBoard"
+            app:destination="@id/dashBoard"
+            app:popUpTo="@id/logIn"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/countrySearch"
+        android:name="com.sanxynet.hagglex.fragment.MoreFragment"
+        android:label="fragment_country_search"
+        tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/crypto"
+        android:name="com.sanxynet.hagglex.fragment.CryptoSaveFragment"
+        android:label="fragment_crypto_page"
+        tools:layout="@layout/fragment_crypto" />
+    <fragment
+        android:id="@+id/wallets"
+        android:name="com.sanxynet.hagglex.fragment.WalletsFragment"
+        android:label="fragment_wallets_page"
+        tools:layout="@layout/fragment_wallets" />
+    <fragment
+        android:id="@+id/home"
+        android:name="com.sanxynet.hagglex.fragment.HomeFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home" />
+</navigation>

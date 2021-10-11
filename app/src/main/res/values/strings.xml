@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">HaggleX</string>
+    <string name="welcome_fragment_welcome">Welcome!</string>
+    <string name="password">Password (Min.8 Characters)</string>
+    <string name="log_in">Log in</string>
+    <string name="create_account">New User? Create a new account</string>
+    <string name="phone_number">Enter your phone number</string>
+    <string name="privacy_policy">By signing you agree to Hagglex terms and privacy policy</string>
+    <string name="verify_message">we just sent a verification code to your email,\n Please enter the code</string>
+    <string name="verify_me">Verify Me</string>
+    <string name="expire">This code will expire in 10min</string>
+    <string name="resend_code"><u><b>Resend Code</b></u></string>
+    <string name="setup">Setup Complete</string>
+    <string name="thank_you_msg">Thank You for setting up your Hagglex Account</string>
+    <string name="start_exploring">Start Exploring</string>
+    <string name="home">Home</string>
+    <string name="wallet">Wallet</string>
+    <string name="cryto">Crytopsave</string>
+    <string name="more">More</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email_address">Email Address</string>
+    <string name="referral_code_optional">Referral code (optional)</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="create_a_username">Create a username</string>
+    <string name="verify_your_account">Verify your account</string>
+    <string name="verification_code">Verification code</string>
+    <string name="ngn">NGN</string>
+    <string name="usd">USD</string>
+
+</resources>

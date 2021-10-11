@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashBoard"
+        android:title="@string/home"
+        android:icon="@drawable/dash_two" />
+
+    <item
+        android:id="@+id/wallets"
+        android:title="@string/wallet"
+        android:icon="@drawable/wallet" />
+
+    <item
+        android:id="@+id/home"
+        android:title="otc"
+        android:icon="@drawable/ic_otc" />
+
+    <item
+        android:id="@+id/crypto"
+        android:title="@string/cryto"
+        android:icon="@drawable/crypto"/>
+
+    <item
+        android:id="@+id/countrySearch"
+        android:title="@string/more"
+        android:icon="@drawable/ic_more"/>
+</menu>
